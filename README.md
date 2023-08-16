@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-<img src="assets\SeisCLIP.png"  width="80%" height="80%">
+<img src="assets\SeismicPretrainedModel.pdf"  width="80%" height="80%">
 </p>
 
 
