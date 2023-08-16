@@ -12,15 +12,17 @@
     <a href='http://cig.ustc.edu.cn/people/list.htm' target='_blank'>Jintao Li<sup>1</sup></a>&emsp;
     </br>
     <a href='https://www.huawei.com/cn/' 
-    target='_blank'>Sibo Zhang <sup>1</sup></a>&emsp;
+    target='_blank'>Sibo Zhang <sup>2</sup></a>&emsp;
     <a href='https://www.huawei.com/cn/' 
-    target='_blank'>Xudong Duan <sup>1</sup></a>&emsp;
+    target='_blank'>Xudong Duan <sup>2</sup></a>&emsp;
 </div>
 <div>
 
 <div align="center">
     <sup>1</sup>
     University of Science and Technology of China&emsp;
+    <sup>2</sup>
+    Huawei&emsp;
     </br>
     <!-- <sup>*</sup> Equal Contribution&emsp; -->
     <sup>†</sup> Corresponding Author&emsp;
