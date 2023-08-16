@@ -5,15 +5,16 @@
 
 <div>
 <div align="center">
-    <a href='https://sixu0.github.io/' target='_blank'>Xu Si
+    <a href='https://shenghanlin.github.io/' target='_blank'>Hanlin Sheng
     <sup>1</sup></a>&emsp;
     <a href='http://cig.ustc.edu.cn/people/list.htm' target='_blank'>Xinming  Wu<sup>1,†,‡</sup></a>&emsp;
-    <a href='http://cig.ustc.edu.cn/people/list.htm' target='_blank'>Hanlin Sheng<sup>1</sup></a>&emsp;
+    <a href='http://cig.ustc.edu.cn/people/list.htm' target='_blank'>Xu Si<sup>1</sup></a>&emsp;
+    <a href='http://cig.ustc.edu.cn/people/list.htm' target='_blank'>Jintao Li<sup>1</sup></a>&emsp;
     </br>
-    <a href='https://dams.ustc.edu.cn/main.htm' 
-    target='_blank'>Jun Zhu <sup>1</sup></a>&emsp;
-    <a href='https://dams.ustc.edu.cn/main.htm' 
-    target='_blank'>Zefeng Li <sup>1</sup></a>&emsp;
+    <a href='https://www.huawei.com/cn/' 
+    target='_blank'>Sibo Zhang <sup>1</sup></a>&emsp;
+    <a href='https://www.huawei.com/cn/' 
+    target='_blank'>Xudong Duan <sup>1</sup></a>&emsp;
 </div>
 <div>
 
@@ -28,14 +29,14 @@
 
 -----------------
 
-### 🌟 Spec-based Foundation Model Supports A Wide Range of Seismology
+### 🌟 Seismic Foundation Model (SFM)
 
 
- As shown in this figure, SeisCLIP can provide services for downstream tasks including event classification 💥 , location 🌍 , mechanism ⛰, etc.
+ As shown in this workflow figure, SFM can provide services for downstream tasks including , etc.
 
 
 # 🌟 News
-* **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). The paper and model will be release before September. ⌛⌛⌛
+* **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). The paper and model will be release soon. ⌛⌛⌛
 
 
 # 🔓 Model Zoo
@@ -45,10 +46,13 @@
 <br>
 <div>
 
-|      Model      |   Pretraining   | Spec Size | #Param |                                               Download | 国内下载源                                               |
+|      Model      |   Pretraining  Size |          Download                                             |
 | :------------: | :----------: | :----------------------: | :----: | :---------------------------------------------------------------------------------------------------: | :--------: | 
-| SeisCLIP  | STEAD-1M |         50 × 120          |  -  |   [ckpt]    | [ckpt]
-| SeisCLIP  | STEAD-1M |         50 × 600          |  -  |   [ckpt]   | [ckpt]
+| SFM-Base   |         224 × 224          |  -  |   [ckpt]  
+| SFM-Base   |         512 × 512          |  -  |   [ckpt]  
+| SFM-Large  |         224 × 224          |  -  |   [ckpt]
+| SFM-Large  |         512 × 512          |  -  |   [ckpt]    
+
 
 # License
 This project is released under the [MIT license](LICENSE).
