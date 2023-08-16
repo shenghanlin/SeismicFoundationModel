@@ -1,0 +1,2 @@
+# SeismicFoundationModel
+Seismic Foundation Model
