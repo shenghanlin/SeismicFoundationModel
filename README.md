@@ -41,7 +41,7 @@
 * **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). The paper and model will be release soon. ⌛⌛⌛
 
 
-# 🔓 Model Zoo
+# 🔓 Model Zoo & Data Release
 
 <!-- <details> -->
 <summary> Open-source Modality-Agnostic Models </summary>
