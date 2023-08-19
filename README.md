@@ -55,7 +55,15 @@
 | SFM-Large  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |
 | SFM-Large  |         512 × 512          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |    
 
-<summary> Open-source Training & DownStream Fine-tune Task </summary>
+<summary> Open-source Training & DownStream Fine-tune Task Data</summary>
+
+|    Task   |      Size      |  Download |
+|:------------------:|:--------------------------:|:----------:|
+| PreTrain   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |  
+| Seismic Facies Classification   |         768 × 768          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |  
+| SFM-Large  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |
+| SFM-Large  |         512 × 512          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |    
+
 <br>
 <div>
 # License
