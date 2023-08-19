@@ -49,7 +49,7 @@
 <div>
 
 |    Model   |      Pretraining Size      |  Download |
-|------------|:--------------------------:|----------:|
+|------------|:--------------------------:|:----------:|
 | SFM-Base   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |  
 | SFM-Base   |         512 × 512          | [ckpt]    |  
 | SFM-Large  |         224 × 224          | [ckpt]    |
