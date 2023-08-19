@@ -50,7 +50,7 @@
 
 |    Model   |      Pretraining Size      |  Download |
 |------------|:--------------------------:|----------:|
-| SFM-Base   |         224 × 224          | [href='http://cig.ustc.edu.cn/people/list.htm' target='_blank'>ckpt]    |  
+| SFM-Base   |         224 × 224          | <a href='https://github.com/shenghanlin/' target='_blank'>Hanlin Sheng    |  
 | SFM-Base   |         512 × 512          | [ckpt]    |  
 | SFM-Large  |         224 × 224          | [ckpt]    |
 | SFM-Large  |         512 × 512          | [ckpt]    |    
