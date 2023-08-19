@@ -34,7 +34,7 @@
 ### 🌟 Seismic Foundation Model (SFM)
 
 
- As shown in this workflow figure, SFM can provide services for downstream tasks including , etc.
+ As shown in this workflow figure, SFM can provide services for downstream tasks including seismic image classification and geobody identification. Additionally, we test the model's performance in regression tasks, specifically in signal processing (i.e. denoising), inversion (i.e. reflectivity estimation), and interpolation.
 
 
 # 🌟 News
@@ -51,15 +51,13 @@
 |    Model   |      Pretraining Size      |  Download |
 |------------|:--------------------------:|:----------:|
 | SFM-Base   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |  
-| SFM-Base   |         512 × 512          | [ckpt]    |  
-| SFM-Large  |         224 × 224          | [ckpt]    |
-| SFM-Large  |         512 × 512          | [ckpt]    |    
+| SFM-Base   |         512 × 512          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |  
+| SFM-Large  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |
+| SFM-Large  |         512 × 512          | [<a href='https://github.com/shenghanlin/' target='_blank'>ckpt]    |    
 
 <summary> Open-source Training & DownStream Fine-tune Task </summary>
 <br>
 <div>
-
-
 # License
 This project is released under the [MIT license](LICENSE).
 
