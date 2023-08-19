@@ -51,9 +51,9 @@
 |    Model   |      Pretraining Size      |  Download |
 |------------|:--------------------------:|:----------:|
 | SFM-Base   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ef1xhsxytZRNjYiXJJGQAJEB2S9Lj76yTQOKF0EYUeCUHg' target='_blank'>ckpt]    |  
-| SFM-Base-512   |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ef1xhsxytZRNjYiXJJGQAJEB2S9Lj76yTQOKF0EYUeCUHg' target='_blank'>ckpt]    |  
-| SFM-Large  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ef1xhsxytZRNjYiXJJGQAJEB2S9Lj76yTQOKF0EYUeCUHg' target='_blank'>ckpt]    |
-| SFM-Large-512  |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ef1xhsxytZRNjYiXJJGQAJEB2S9Lj76yTQOKF0EYUeCUHg' target='_blank'>ckpt]    |    
+| SFM-Base-512   |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/ES-iLYELZq1IiOor3LgDGPsBIYXGs98BeBpquW4srfJz_g' target='_blank'>ckpt]    |  
+| SFM-Large  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ec7ZqiAwdvtGpN5vasPnalwBZGl6z0fkaS9hFTWQ6ZVjMQ' target='_blank'>ckpt]    |
+| SFM-Large-512  |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EXwVJmoAmRJFoenCvsIsolQBhcmlL3L_tzV5Ubm5nXsNEw' target='_blank'>ckpt]    |    
 
 <summary> Open-source Training & DownStream Fine-tune Task Data</summary>
 
