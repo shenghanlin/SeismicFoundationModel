@@ -62,7 +62,7 @@
 | PreTrain   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
 | Seismic Facies Classification   |         768 × 768          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
 | Seismic GeoBody Identification  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
-| Inversion (Reflectivity Model)  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
+| Inversion (Reflectivity Estimation)  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
 | Signal Processing (Denoise)   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
 | Interpolation                 |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |
 
