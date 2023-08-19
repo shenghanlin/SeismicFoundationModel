@@ -44,17 +44,20 @@
 # :rocket: Model Zoo & Data Release
 
 <!-- <details> -->
-<summary> Open-source Modality-Agnostic Models </summary>
+<summary> Open-source Pretrained Models </summary>
 <br>
 <div>
 
-
 |    Model   |      Pretraining Size      |  Download |
 |------------|:--------------------------:|----------:|
-| SFM-Base   |         224 × 224          |     [ckpt]|  
-| SFM-Base   |         512 × 512          |     [ckpt]|  
-| SFM-Large  |         224 × 224          |     [ckpt]|
-| SFM-Large  |         512 × 512          |     [ckpt]|    
+| SFM-Base   |         224 × 224          | [href='http://cig.ustc.edu.cn/people/list.htm' target='_blank'>ckpt]    |  
+| SFM-Base   |         512 × 512          | [ckpt]    |  
+| SFM-Large  |         224 × 224          | [ckpt]    |
+| SFM-Large  |         512 × 512          | [ckpt]    |    
+
+<summary> Open-source Training & DownStream Fine-tune Task </summary>
+<br>
+<div>
 
 
 # License
