@@ -41,19 +41,12 @@
 * **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). The paper and model will be release soon. ⌛⌛⌛
 
 
-# 🔓 Model Zoo & Data Release
+# :rocket: Model Zoo & Data Release
 
 <!-- <details> -->
 <summary> Open-source Modality-Agnostic Models </summary>
 <br>
 <div>
-
-|      Model      |   Pretraining   | Spec Size | #Param |                                               Download | 国内下载源                                               |
-| :------------:  | :----------:    | :----------------------: | :----: | :---------------------------------------------------------------------------------------------------: | :--------: | 
-| SFM-Base   |         224 × 224          |  -  |   [ckpt]  
-| SFM-Base   |         512 × 512          |  -  |   [ckpt]  
-| SFM-Large  |         224 × 224          |  -  |   [ckpt]
-| SFM-Large  |         512 × 512          |  -  |   [ckpt]    
 
 
 |    Model   |      Pretraining Size      |  Download |
