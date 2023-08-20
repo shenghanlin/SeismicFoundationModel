@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-<img src="SeismicPretrainedModel.png"  width="80%" height="80%">
+<img src="assert/SeismicPretrainedModel.png"  width="80%" height="80%">
 </p>
 
 
