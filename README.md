@@ -58,6 +58,7 @@
 <summary> Open-source Training & DownStream Fine-tune Task Data</summary>
 <br>
 <div>
+
 |    Task   |      Size      |  Download |
 |:------------------:|:--------------------------:|:----------:|
 | PreTrain   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
