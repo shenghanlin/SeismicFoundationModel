@@ -1,7 +1,7 @@
 ## Masked Autoencoders: A PyTorch Implementation
 
 <p align="center">
-  <img src="assert/Network.png" width="480">
+  <img src="../assert/Network.png" width="480">
 </p>
 
 This is a PyTorch/GPU re-implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
