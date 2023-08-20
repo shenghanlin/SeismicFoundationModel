@@ -1,11 +1,9 @@
 #!/bin/bash
-export PYTHONPATH=$PYTHONPATH:/gpfs/home/ess/hlsheng/.local/lib/python3.9/site-packages
 python submitit_pretrain.py \
-    --job_dir '/gpfs/home/ess/hlsheng/mae-main/output_base_gpu4/' \
+    --job_dir './output_base_gpu4/' \
     --batch_size 580\
     --accum_iter 4 \
     --model mae_vit_base_patch16D4d256 \
-    --resume './output_base_gpu4/checkpoint-1516.pth' \
     --mask_ratio 0.75 \
     --epochs 1600 \
     --warmup_epochs 40 \

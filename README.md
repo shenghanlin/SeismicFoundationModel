@@ -56,7 +56,8 @@
 | SFM-Large-512  |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EXwVJmoAmRJFoenCvsIsolQBhcmlL3L_tzV5Ubm5nXsNEw' target='_blank'>ckpt]    |    
 
 <summary> Open-source Training & DownStream Fine-tune Task Data</summary>
-
+<br>
+<div>
 |    Task   |      Size      |  Download |
 |:------------------:|:--------------------------:|:----------:|
 | PreTrain   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  

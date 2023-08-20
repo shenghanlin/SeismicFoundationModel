@@ -7,13 +7,13 @@
 # References:
 # DeiT: https://github.com/facebookresearch/deit
 # BEiT: https://github.com/microsoft/unilm/tree/master/beit
+# MAE:  https://github.com/facebookresearch/mae
 # --------------------------------------------------------
 import math
 import sys
 from typing import Iterable
 
 import torch
-
 import util.misc as misc
 import util.lr_sched as lr_sched
 

@@ -31,9 +31,7 @@ def parse_args():
 
 def get_shared_folder() -> Path:
     user = os.getenv("USER")
-    # if Path("/checkpoint/").is_dir():
-        # p = Path(f"/checkpoint/{user}/experiments")
-    p = Path(f"/gpfs/home/ess/hlsheng/mae-main/output_base_gpu4/")
+    p = Path(f"./output_base_gpu4/")
     p.mkdir(exist_ok=True)
     return p
 

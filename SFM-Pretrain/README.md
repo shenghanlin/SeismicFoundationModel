@@ -4,7 +4,6 @@
   <img src="https://user-images.githubusercontent.com/11435359/146857310-f258c86c-fde6-48e8-9cee-badd2b21bd2c.png" width="480">
 </p>
 
-
 This is a PyTorch/GPU re-implementation of the paper [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377):
 ```
 @Article{MaskedAutoencoders2021,
@@ -14,25 +13,10 @@ This is a PyTorch/GPU re-implementation of the paper [Masked Autoencoders Are Sc
   year    = {2021},
 }
 ```
-
-* The original implementation was in TensorFlow+TPU. This re-implementation is in PyTorch+GPU.
-
-* This repo is a modification on the [DeiT repo](https://github.com/facebookresearch/deit). Installation and preparation follow that repo.
+* This repo is a modification on the [MAE](https://github.com/facebookresearch/mae). Installation and preparation follow that repo.
 
 * This repo is based on [`timm==0.3.2`](https://github.com/rwightman/pytorch-image-models), for which a [fix](https://github.com/rwightman/pytorch-image-models/issues/420#issuecomment-776459842) is needed to work with PyTorch 1.8.1+.
 
-### Catalog
-
-- [x] Visualization demo
-- [x] Pre-trained checkpoints + fine-tuning code
-- [x] Pre-training code
-
-### Visualization demo
-
-Run our interactive visualization demo using [Colab notebook](https://colab.research.google.com/github/facebookresearch/mae/blob/main/demo/mae_visualize.ipynb) (no GPU needed):
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/11435359/147859292-77341c70-2ed8-4703-b153-f505dcb6f2f8.png" width="600">
-</p>
 
 ### Fine-tuning with pre-trained checkpoints
 

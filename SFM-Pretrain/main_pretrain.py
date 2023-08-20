@@ -7,6 +7,7 @@
 # References:
 # DeiT: https://github.com/facebookresearch/deit
 # BEiT: https://github.com/microsoft/unilm/tree/master/beit
+# MAE:  https://github.com/facebookresearch/mae
 # --------------------------------------------------------
 import argparse
 import datetime
@@ -24,8 +25,7 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
 import timm
-from util.datasets import RandomSeismicSet,SeismicSet,SeismicMetaSet
-
+from util.datasets import SeismicSet
 assert timm.__version__ == "0.3.2"  # version check
 import timm.optim.optim_factory as optim_factory
 
@@ -123,16 +123,6 @@ def main(args):
     np.random.seed(seed)
 
     cudnn.benchmark = True
-
-    # simple augmentation
-    # transform_train = transforms.Compose([
-    #         transforms.RandomResizedCrop(args.input_size, scale=(0.2, 1.0), interpolation=3),  # 3 is bicubic
-    #         transforms.RandomHorizontalFlip(),
-    #         transforms.ToTensor(),
-    #         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
-    # dataset_train = datasets.ImageFolder(os.path.join(args.data_path, 'train'), transform=transform_train)
-    # print(dataset_train)
-    # dataset_train = RandomSeismicSet(args.data_path, args.input_size)
     dataset_train =  SeismicSet(args.data_path, args.input_size)
 
 
@@ -162,32 +152,16 @@ def main(args):
     
     # define the model
     model = models_mae.__dict__[args.model](norm_pix_loss=args.norm_pix_loss,in_chans=1)
-    # if args.finetune:
-    #     checkpoint = torch.load(args.finetune, map_location='cpu')
-    #     print("Load pre-trained checkpoint from: %s" % args.finetune)
-    #     checkpoint_model = checkpoint['model']
-    #     state_dict = model.state_dict()
-    #     for k in ['head.weight', 'head.bias']:
-    #         if k in checkpoint_model and checkpoint_model[k].shape != state_dict[k].shape:
-    #             print(f"Removing key {k} from pretrained checkpoint")
-    #             del checkpoint_model[k]
-
-    #     # load pre-trained model
-    #     msg = model.load_state_dict(checkpoint_model, strict=False)
-    #     print(msg)
     model.to(device)
 
     model_without_ddp = model
     print("Model = %s" % str(model_without_ddp))
-
     eff_batch_size = args.batch_size * args.accum_iter * misc.get_world_size()
-    
     if args.lr is None:  # only base_lr is specified
         args.lr = args.blr * eff_batch_size / 256
 
     print("base lr: %.2e" % (args.lr * 256 / eff_batch_size))
     print("actual lr: %.2e" % args.lr)
-
     print("accumulate grad iterations: %d" % args.accum_iter)
     print("effective batch size: %d" % eff_batch_size)
 
