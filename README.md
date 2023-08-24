@@ -33,8 +33,7 @@
 
 # 🌟 Seismic Foundation Model (SFM)
 
-
- As shown in this workflow figure, SFM can provide services for downstream tasks including seismic image classification and geobody identification. Additionally, we test the model's performance in regression tasks, specifically in signal processing (i.e. denoising), inversion (i.e. reflectivity estimation), and interpolation.
+ As shown in this workflow figure, we test the Seismic Foundation Model's performance in segmentation tasks and regression tasks, specifically in classification (i.e. seismic facies), segmentaion (i.e. seismic geobody), signal processing (i.e. denoising), inversion (i.e. reflectivity estimation), and interpolation.
 
 This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
 ```
@@ -52,9 +51,9 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 ## &#x1F449; Pre-train & Fine-tune Code
 
-The pre-training instruction is in [PRETRAIN.md](SFM-Pretrain/README.md).
+* The pre-training instruction is in [PRETRAIN.md](SFM-Pretrain/README.md).
 
-The Fine-tuning instruction is in [FINETUNE.md](SFM-Finetune/README.md).
+* The Fine-tuning instruction is in [FINETUNE.md](SFM-Finetune/README.md).
 
 
 ## :rocket: Model Zoo & Data Release
