@@ -39,7 +39,7 @@ CUDA_VISIBLE_DEVICES='5' OMP_NUM_THREADS=1 python -m torch.distributed.launch --
 - Here the effective batch size is 64 (`batch_size` per gpu) * 8 (`nodes`) * 8 (gpus per node) = 4096. If memory or # gpus is limited, use `--accum_iter` to maintain the effective batch size, which is `batch_size` (per gpu) * `nodes` * 8 (gpus per node) * `accum_iter`.
 - `blr` is the base learning rate. The actual `lr` is computed by the [linear scaling rule](https://arxiv.org/abs/1706.02677): `lr` = `blr` * effective batch size / 256.
 -`finetune` can be used to loaded pre-trained model.
-- `modelComparsion` can be placed in a bash file to train Unet/Deeplab models with the same parameters
+- `modelComparsion` can be placed in a bash file to train ['Unet'](https://github.com/bigmb/Unet-Segmentation-Pytorch-Nest-of-Unets)/['Deeplab'](https://github.com/jfzhang95/pytorch-deeplab-xception) models with the same parameters. 
 - `forzen` can be used to freeze the loaded pre-trained model parameters.
 
 ## Fine-tune On your own task

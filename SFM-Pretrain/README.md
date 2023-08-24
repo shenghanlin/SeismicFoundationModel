@@ -4,7 +4,7 @@
   <img src="../assert/Network.png" width="480">
 </p>
 
-This is a PyTorch/GPU re-implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
+This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
 ```
 @Article{MaskedAutoencoders2021,
   author  = {Kaiming He and Xinlei Chen and Saining Xie and Yanghao Li and Piotr Doll{\'a}r and Ross Girshick},
@@ -32,7 +32,7 @@ To pre-train ViT-Base/Large with **multi-node distributed training**, run the ``
     --blr 1.5e-4 --weight_decay 0.05 \
     --data_path ${DATA_DIR}
 ```
-- Here the effective batch size is 64 (`batch_size` per gpu) * 8 (`nodes`) * 8 (gpus per node) = 4096. If memory or # gpus is limited, use `--accum_iter` to maintain the effective batch size, which is `batch_size` (per gpu) * `nodes` * 8 (gpus per node) * `accum_iter`.
+- Here the effective batch size is 580 (`batch_size` per gpu) * 4 (`nodes`) * 4 (gpus per node) = 9280. If memory or # gpus is limited, use `--accum_iter` to maintain the effective batch size, which is `batch_size` (per gpu) * `nodes` * 4 (gpus per node) * `accum_iter`.
 - `blr` is the base learning rate. The actual `lr` is computed by the [linear scaling rule](https://arxiv.org/abs/1706.02677): `lr` = `blr` * effective batch size / 256.
 
 ### License
