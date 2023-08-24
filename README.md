@@ -46,16 +46,16 @@ This is a PyTorch/GPU re-implementation of the paper [Seismic Foundation Model](
 }
 ```
 
-## Pre-train and Finetune
-
-
 ## 🌟 News
 * **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). The paper and model will be release soon. ⌛⌛⌛
+
 
 ## Pre-train & Fine-tune Code
 
 The pre-training instruction is in [PRETRAIN.md](SFM-Pretrain/README.md).
+
 The Fine-tuning instruction is in [Finetune.md](SFM-Finetune/README.md).
+
 
 ## :rocket: Model Zoo & Data Release
 
