@@ -50,7 +50,7 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 * **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). The paper and model will be release soon. ⌛⌛⌛
 
 
-## Pre-train & Fine-tune Code
+## &#x1F449; Pre-train & Fine-tune Code
 
 The pre-training instruction is in [PRETRAIN.md](SFM-Pretrain/README.md).
 
