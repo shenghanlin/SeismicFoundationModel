@@ -31,17 +31,33 @@
 
 -----------------
 
-### 🌟 Seismic Foundation Model (SFM)
+# 🌟 Seismic Foundation Model (SFM)
 
 
  As shown in this workflow figure, SFM can provide services for downstream tasks including seismic image classification and geobody identification. Additionally, we test the model's performance in regression tasks, specifically in signal processing (i.e. denoising), inversion (i.e. reflectivity estimation), and interpolation.
 
+This is a PyTorch/GPU re-implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
+```
+@Article{MaskedAutoencoders2021,
+  author  = {Kaiming He and Xinlei Chen and Saining Xie and Yanghao Li and Piotr Doll{\'a}r and Ross Girshick},
+  journal = {arXiv:2111.06377},
+  title   = {Masked Autoencoders Are Scalable Vision Learners},
+  year    = {2021},
+}
+```
 
-# 🌟 News
+## Pre-train and Finetune
+
+
+## 🌟 News
 * **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). The paper and model will be release soon. ⌛⌛⌛
 
+## Pre-train & Fine-tune Code
 
-# :rocket: Model Zoo & Data Release
+The pre-training instruction is in [PRETRAIN.md](SFM-Pretrain/README.md).
+The Fine-tuning instruction is in [Finetune.md](SFM-Finetune/README.md).
+
+## :rocket: Model Zoo & Data Release
 
 <!-- <details> -->
 <summary> Open-source Pretrained Models </summary>

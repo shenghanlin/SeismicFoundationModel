@@ -20,11 +20,10 @@ from util.msssim import MSSSIM
 class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
     """ Vision Transformer with support for global average pooling
     """
-    def __init__(self, global_pool=False,Super=False,Interpolation=False, **kwargs):
+    def __init__(self, global_pool=False,Interpolation=False, **kwargs):
         super(VisionTransformer, self).__init__(**kwargs)
 
         self.global_pool = global_pool
-        self.super = Super
         self.interpolation = Interpolation
         self.decoder = DecoderCup(in_channels=[self.embed_dim,256,128,64])
         # self.decoder = VIT_MLAHead(mla_channels=self.embed_dim,num_classes=self.num_classes)
@@ -39,8 +38,6 @@ class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
             embed_dim = kwargs['embed_dim']
             self.fc_norm = norm_layer(embed_dim)
             del self.norm  # remove the original norm
-        if self.super:
-            self.superBlock = DecoderBlock(64, 64, 0)
             
     def generate_mask(self,input_tensor, ratio):
         mask = torch.zeros_like(input_tensor)
@@ -70,8 +67,6 @@ class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
         x = self.norm(x)
         
         x = self.decoder(x[:, 1:, :],img)
-        if self.super:
-            x = self.superBlock(x)
         x = self.segmentation_head(x)
         # logits = self.segmentation_head(x)
         # print(logits.shape)
@@ -367,14 +362,3 @@ def vit_huge_patch14(**kwargs):
 
 
 
-if __name__ == '__main__':
-
-    model = vit_large_patch16(num_classes=1,
-                             drop_path_rate=0.1, 
-                             in_chans=1,
-                             img_size=128,Super=True)
-    inputs = torch.randn(2, 1, 128,128)
-
-    outputs = model(inputs)
-    print(outputs.shape)
-    print('Done')

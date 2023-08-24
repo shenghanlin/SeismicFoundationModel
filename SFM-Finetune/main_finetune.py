@@ -31,7 +31,7 @@ from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
 
 import util.lr_decay as lrd
 import util.misc as misc
-from util.datasets import FacesSet2,SaltSet,DenoiseSet,ReflectSet,InterpolationSet,CO2Set,SuperResolutionSet
+from util.datasets import FacesSet,SaltSet,DenoiseSet,ReflectSet,InterpolationSet
 from util.datasets import FacesSetF3
 from util.pos_embed import interpolate_pos_embed
 from util.misc import NativeScalerWithGradNormCount as NativeScaler
@@ -97,8 +97,8 @@ def get_args_parser():
                         help='Random erase count (default: 1)')
     parser.add_argument('--resplit', action='store_true', default=False,
                         help='Do not random erase first (clean) augmentation split')
-    parser.add_argument('--forzen', default='',
-                        help='forzen from model')
+    parser.add_argument('--frozen', default='',
+                        help='frozen from model')
     # * Mixup params
     parser.add_argument('--mixup', type=float, default=0,
                         help='mixup alpha, mixup enabled if > 0.')
@@ -119,7 +119,7 @@ def get_args_parser():
     parser.add_argument('--modelComparsion', default='',
                         help='Deeplab or Unet')
     parser.add_argument('--task', type=str, default='SEAM',
-                        help='SEAM or Salt or CO2 or Denoise or Interpolation or Reflection or SuperResolution')
+                        help='SEAM or Salt or Denoise or Interpolation or Reflection')
     parser.add_argument('--global_pool', action='store_true')
     parser.set_defaults(global_pool=False)
     parser.add_argument('--cls_token', action='store_false', dest='global_pool',
@@ -182,16 +182,12 @@ def main(args):
     # dataset_train = build_dataset(is_train=True, args=args)
     # dataset_val = build_dataset(is_train=False, args=args)
     if args.task == 'SEAM':
-        dataset_train = FacesSet2(args.data_path,is_train=True)
-        dataset_val = FacesSet2(args.data_path,is_train=False)
+        dataset_train = FacesSet(args.data_path,is_train=True)
+        dataset_val = FacesSet(args.data_path,is_train=False)
         args.nb_classes = 6
     elif args.task == 'Salt':
         dataset_train = SaltSet(args.data_path,is_train=True)
         dataset_val   = SaltSet(args.data_path,is_train=False)
-        args.nb_classes = 2
-    elif args.task == 'CO2':
-        dataset_train = CO2Set(args.data_path,is_train=True)
-        dataset_val   = CO2Set(args.data_path,is_train=False)
         args.nb_classes = 2
     elif args.task == 'Denoise':
         dataset_train = DenoiseSet(args.data_path,is_train=True)
@@ -276,10 +272,10 @@ def main(args):
             img_size=args.input_size,
             num_classes=args.nb_classes,
             drop_path_rate=args.drop_path,
-            in_chans=1,Super=(args.task=='SuperResolution'),
+            in_chans=1,
             Interpolation=(args.task=='Interpolation')
         )
-        elif args.task in ['SEAM', 'Salt' ,'CO2']:
+        elif args.task in ['SEAM', 'Salt']:
             model = models_Segmentation.__dict__[args.model](
             img_size=args.input_size,
             num_classes=args.nb_classes,
@@ -312,16 +308,13 @@ def main(args):
         # # manually initialize fc layer
         # trunc_normal_(model.head.weight, std=2e-5)
     # Model_Frozen = True
-    if args.forzen and args.finetune:
+    if args.frozen and args.finetune:
         # print('ALlLLLLLLLLLLLLLLLL')
         for _, p in model.named_parameters():
             p.requires_grad = False
         for _, p in model.decoder.named_parameters():
             p.requires_grad = True
         for _, p in model.segmentation_head.named_parameters():
-                p.requires_grad = True
-        if args.task == 'SuperResolution':
-            for _, p in model.superBlock.named_parameters():
                 p.requires_grad = True
     model.to(device)
 
@@ -348,7 +341,7 @@ def main(args):
 
     # build optimizer with layer-wise lr decay (lrd)
     # optimizer = torch.optim.AdamW(param_groups, lr=args.lr)
-    if args.forzen and args.finetune:
+    if args.frozen and args.finetune:
         optimizer = torch.optim.AdamW(filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr)
     elif args.modelComparsion == 'Deeplab' or args.modelComparsion == 'Unet':
         optimizer = torch.optim.AdamW(filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr)
@@ -357,9 +350,9 @@ def main(args):
         
     loss_scaler = NativeScaler()
 
-    if args.task in ['Denoise','Interpolation','Reflection','SuperResolution']:
+    if args.task in ['Denoise','Interpolation','Reflection']:
         criterion = forward_loss
-    elif args.task in ['SEAM', 'Salt' ,'CO2']:
+    elif args.task in ['SEAM', 'Salt']:
         criterion = torch.nn.CrossEntropyLoss()
     print("criterion = %s" % str(criterion))
 
@@ -388,7 +381,7 @@ def main(args):
             misc.save_model(
                 args=args, model=model, model_without_ddp=model_without_ddp, optimizer=optimizer,
                 loss_scaler=loss_scaler, epoch=epoch)
-        if args.task in ['SEAM', 'Salt' ,'CO2']:
+        if args.task in ['SEAM', 'Salt']:
             test_stats = evaluate(data_loader_val, model, device)
             print(f"Accuracy of the network on the {len(dataset_val)} test images: {test_stats['acc']:.1f}%")
             max_accuracy = max(max_accuracy, test_stats["acc"])
@@ -403,7 +396,7 @@ def main(args):
                             **{f'test_{k}': v for k, v in test_stats.items()},
                             'epoch': epoch,
                             'n_parameters': n_parameters}
-        elif args.task in ['Denoise','Interpolation','Reflection','SuperResolution']:
+        elif args.task in ['Denoise','Interpolation','Reflection']:
             test_stats = evaluateRegression(data_loader_val, model, device,task=args.task)
             
             print(f"Loss of the network on the {len(dataset_val)} test images: {test_stats['loss']:.5f}")

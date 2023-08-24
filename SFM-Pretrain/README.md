@@ -1,4 +1,4 @@
-## Masked Autoencoders: A PyTorch Implementation
+## Seismic Foundation Model - Pre-train
 
 <p align="center">
   <img src="../assert/Network.png" width="480">
@@ -21,18 +21,16 @@ This is a PyTorch/GPU re-implementation of the paper [Seismic Foundation Model](
 
 To pre-train ViT-Base/Large with **multi-node distributed training**, run the ```./train.sh``` :
 ```
-python submitit_pretrain.py \
+  python submitit_pretrain.py \
     --job_dir ${JOB_DIR} \
-    --nodes 8 \
-    --use_volta32 \
-    --batch_size 64 \
-    --model mae_vit_large_patch16 \
-    --norm_pix_loss \
+    --batch_size 580\
+    --accum_iter 4 \
+    --model mae_vit_base_patch16D4d256 \
     --mask_ratio 0.75 \
-    --epochs 800 \
+    --epochs 1600 \
     --warmup_epochs 40 \
     --blr 1.5e-4 --weight_decay 0.05 \
-    --data_path ${IMAGENET_DIR}
+    --data_path ${DATA_DIR}
 ```
 - Here the effective batch size is 64 (`batch_size` per gpu) * 8 (`nodes`) * 8 (gpus per node) = 4096. If memory or # gpus is limited, use `--accum_iter` to maintain the effective batch size, which is `batch_size` (per gpu) * `nodes` * 8 (gpus per node) * `accum_iter`.
 - `blr` is the base learning rate. The actual `lr` is computed by the [linear scaling rule](https://arxiv.org/abs/1706.02677): `lr` = `blr` * effective batch size / 256.
