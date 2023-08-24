@@ -4,15 +4,14 @@
   <img src="../assert/Network.png" width="480">
 </p>
 
-This is a PyTorch/GPU re-implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
+This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
 ```
-@Article{MaskedAutoencoders2021,
-  author  = {Kaiming He and Xinlei Chen and Saining Xie and Yanghao Li and Piotr Doll{\'a}r and Ross Girshick},
-  journal = {arXiv:2111.06377},
-  title   = {Masked Autoencoders Are Scalable Vision Learners},
-  year    = {2021},
+@Article{SeismicFoundationModel2023,
+  author  = {Hanlin Sheng and Xinming wu and Xu Si and Jintao Li and Sibo Zhang and XuDong Duan},
+  journal = {arXiv:...},
+  title   = {Seismic Foundation Model},
+  year    = {2023},
 }
-```
 * This repo is a modification on the [MAE](https://github.com/facebookresearch/mae). Installation and preparation follow that repo.
 
 * This repo is based on [`timm==0.3.2`](https://github.com/rwightman/pytorch-image-models), for which a [fix](https://github.com/rwightman/pytorch-image-models/issues/420#issuecomment-776459842) is needed to work with PyTorch 1.8.1+.
