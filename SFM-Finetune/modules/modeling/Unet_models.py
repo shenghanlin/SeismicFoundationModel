@@ -1,3 +1,8 @@
+# --------------------------------------------------------
+# References:
+# Unet: https://github.com/bigmb/Unet-Segmentation-Pytorch-Nest-of-Unets
+# --------------------------------------------------------
+
 from __future__ import print_function, division
 import torch.nn as nn
 import torch.nn.functional as F

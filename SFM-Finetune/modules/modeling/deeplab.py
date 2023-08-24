@@ -1,3 +1,8 @@
+# --------------------------------------------------------
+# References:
+# Deeplab v3+: https://github.com/jfzhang95/pytorch-deeplab-xception
+# --------------------------------------------------------
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
