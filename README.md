@@ -65,10 +65,10 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 |    Model   |      Pretraining Size      |  Download |
 |------------|:--------------------------:|:----------:|
-| SFM-Base   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ef1xhsxytZRNjYiXJJGQAJEB2S9Lj76yTQOKF0EYUeCUHg' target='_blank'>ckpt]    |  
-| SFM-Base-512   |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/ES-iLYELZq1IiOor3LgDGPsBIYXGs98BeBpquW4srfJz_g' target='_blank'>ckpt]    |  
-| SFM-Large  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ec7ZqiAwdvtGpN5vasPnalwBZGl6z0fkaS9hFTWQ6ZVjMQ' target='_blank'>ckpt]    |
-| SFM-Large-512  |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EXwVJmoAmRJFoenCvsIsolQBhcmlL3L_tzV5Ubm5nXsNEw' target='_blank'>ckpt]    |    
+| SFM-Base   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ef1xhsxytZRNjYiXJJGQAJEBZFmUiUhUuJxOyhILG88NRg?e=gGxUIb' target='_blank'>ckpt]    |  
+| SFM-Base-512   |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/ES-iLYELZq1IiOor3LgDGPsBbRIXdt2wuyXeJfK-8FhM9w?e=5eURf2' target='_blank'>ckpt]    |  
+| SFM-Large  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ec7ZqiAwdvtGpN5vasPnalwBXQe2qUPM_t9kdSjdkQeNIg?e=BmFlKU' target='_blank'>ckpt]    |
+| SFM-Large-512  |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EXwVJmoAmRJFoenCvsIsolQBnyheFdjbejgryRj9esL2HA?e=gGsJaZ' target='_blank'>ckpt]    |    
 
 <summary> Open-source Training & DownStream Fine-tune Task Data</summary>
 <br>
@@ -76,12 +76,12 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 |    Task   |      Size      |  Download |
 |:------------------:|:--------------------------:|:----------:|
-| PreTrain   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
-| Seismic Facies Classification   |         768 × 768          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
-| Seismic GeoBody Identification  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
-| Inversion (Reflectivity Estimation)  |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
-| Signal Processing (Denoise)   |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |  
-| Interpolation                 |         224 × 224          | [<a href='https://github.com/shenghanlin/' target='_blank'>DatFile]    |
+| PreTrain   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/Et8WP_voHfNMvx_kpR_iFVwBRpH3TgHsKPicCeRhXULn0g?e=f2cT2S' target='_blank'>DatFile]    |  
+| Seismic Facies Classification   |         768 × 768          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e' target='_blank'>DatFile]    |  
+| Seismic GeoBody Identification  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/EvwMkQfKqJtOk6TP8U484yABSeCxjIL5gojWwqWSnMDeVg?e=NhbRWP' target='_blank'>DatFile]    |  
+| Inversion (Reflectivity Estimation)  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/En2b7nDlY6BEn5tKXdcbi8oBTtO8CDRcir1IgGsnCYUeYw?e=dyTfnh' target='_blank'>DatFile]    |  
+| Signal Processing (Denoise)   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/EnUGPcGo-hFFhrr2T4-wvSIB4KCQQJphdONXvaO1FOr_WA?e=rP057b' target='_blank'>DatFile]    |  
+| Interpolation                 |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EWyYd0lXhfxOgffJIz5ICEUBRB_IqkbPoF1PQttUAfDLaQ?e=lR9qre' target='_blank'>DatFile]    |
 
   
 
