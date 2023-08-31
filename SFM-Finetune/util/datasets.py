@@ -201,7 +201,7 @@ class InterpolationSet(data.Dataset):
         if is_train:
             self.data_list = self.data_list
         elif not is_train:
-            self.data_list = [folder + str(f)+'.dat' for f in range(8000,8100)]
+            self.data_list = [folder+'U'+ + str(f)+'.dat' for f in range(2000,4000)]
         self.label_list = self.data_list
     
     def __getitem__(self, index):
@@ -223,13 +223,13 @@ class DenoiseSet(data.Dataset):
                  is_train=True) -> None:
         super().__init__()
         self.shape = shape
-        self.data_list = [folder+'noisenew/'+ str(f)+'.dat' for f in range(2000)]
+        self.data_list = [folder+'seismic/'+ str(f)+'.dat' for f in range(2000)]
         n = len(self.data_list)
         if is_train:
             self.data_list = self.data_list
-            self.label_list = [f.replace('/noisenew/', '/clean/') for f in self.data_list]
+            self.label_list = [f.replace('/seismic/', '/label/') for f in self.data_list]
         elif not is_train:
-            self.data_list = [folder+'fieldnoise/'+ str(f)+'.dat' for f in range(1600)]
+            self.data_list = [folder+'field/'+ str(f)+'.dat' for f in range(4000)]
             self.label_list = self.data_list
 
     def __getitem__(self, index):
@@ -255,17 +255,20 @@ class ReflectSet(data.Dataset):
                  is_train=True) -> None:
         super().__init__()
         self.shape = shape
-        self.data_list = [folder+'noise/'+ str(f)+'.dat' for f in range(2200)]
+        self.data_list = [folder+'seismic/'+ str(f)+'.dat' for f in range(2200)]
 
 
         
         n = len(self.data_list)
         if is_train:
             self.data_list = self.data_list
+            self.label_list = [
+            f.replace('/seismic/', '/label/') for f in self.data_list
+        ]
         elif not is_train:
-            self.data_list = [folder+'noise/'+ str(f)+'.dat' for f in range(2200,2400)]
-        self.label_list = [
-            f.replace('/noise/', '/reflect/') for f in self.data_list
+            self.data_list = [folder+'SEAMseismic/'+ str(f)+'.dat' for f in range(4000)]
+            self.label_list = [
+            f.replace('/SEAMseismic/', '/SEAMreflect/') for f in self.data_list
         ]
 
     def __getitem__(self, index):

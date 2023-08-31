@@ -1,5 +1,5 @@
 CUDA_VISIBLE_DEVICES='5' OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=1 main_finetune.py \
-    --data_path '/home/hlsheng/mae_data/finetune/Denoise/' \
+    --data_path '../Data/Denoise/' \
     --task 'Denoise' \
     --accum_iter 1 \
     --batch_size 60 \

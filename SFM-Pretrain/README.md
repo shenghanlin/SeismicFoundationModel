@@ -19,7 +19,7 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 ## Pre-training MAE
 
-To pre-train ViT-Base/Large with **multi-node distributed training**, run the ```./train.sh``` :
+To pre-train SFM-Base/Large with **multi-node distributed training**, run the ```./submit-train.sh``` :
 ```
   python submitit_pretrain.py \
     --job_dir ${JOB_DIR} \
@@ -35,6 +35,7 @@ To pre-train ViT-Base/Large with **multi-node distributed training**, run the ``
 - Here the effective batch size is 580 (`batch_size` per gpu) * 4 (`nodes`) * 4 (gpus per node) = 9280. If memory or # gpus is limited, use `--accum_iter` to maintain the effective batch size, which is `batch_size` (per gpu) * `nodes` * 4 (gpus per node) * `accum_iter`.
 - `blr` is the base learning rate. The actual `lr` is computed by the [linear scaling rule](https://arxiv.org/abs/1706.02677): `lr` = `blr` * effective batch size / 256.
 
+To pre-train SFM-Base/Large with **single node**, run the ```./train.sh```
 ### License
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.

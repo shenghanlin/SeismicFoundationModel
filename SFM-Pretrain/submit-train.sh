@@ -1,4 +1,6 @@
-OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 main_pretrain.py \
+#!/bin/bash
+python submitit_pretrain.py \
+    --job_dir './output_base_gpu4/' \
     --batch_size 580\
     --accum_iter 4 \
     --model mae_vit_base_patch16D4d256 \
@@ -7,5 +9,4 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 main_pre
     --warmup_epochs 40 \
     --blr 1.5e-4 --weight_decay 0.05 \
     --data_path '../Data/Pretrain/mae_data_more/'
-    --output_dir './output_model/' \
-    --log_dir './output_model/' \
+
