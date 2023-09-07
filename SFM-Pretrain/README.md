@@ -6,11 +6,13 @@
 
 This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
 ```
-@Article{SeismicFoundationModel2023,
-  author  = {Hanlin Sheng and Xinming wu and Xu Si and Jintao Li and Sibo Zhang and XuDong Duan},
-  journal = {arXiv:...},
-  title   = {Seismic Foundation Model},
-  year    = {2023},
+@misc{sheng2023seismic,
+      title={Seismic Foundation Model (SFM): a new generation deep learning model in geophysics}, 
+      author={Hanlin Sheng and Xinming Wu and Xu Si and Jintao Li and Sibio Zhang and Xudong Duan},
+      year={2023},
+      eprint={2309.02791},
+      archivePrefix={arXiv},
+      primaryClass={physics.geo-ph}
 }
 ```
 * This repo is a modification on the [MAE](https://github.com/facebookresearch/mae). Installation and preparation follow that repo.
