@@ -35,7 +35,7 @@
 
  As shown in this workflow figure, we test the Seismic Foundation Model's performance in segmentation tasks and regression tasks, specifically in classification (i.e. seismic facies), segmentaion (i.e. seismic geobody), signal processing (i.e. denoising), inversion (i.e. reflectivity estimation), and interpolation.
 
-This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
+This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2309.02791):
 ```
 @misc{sheng2023seismic,
       title={Seismic Foundation Model (SFM): a new generation deep learning model in geophysics}, 

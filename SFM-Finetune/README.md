@@ -4,7 +4,7 @@
   <img src="../assert/Network.png" width="480">
 </p>
 
-This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2111.06377):
+This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2309.02791):
 ```
 @misc{sheng2023seismic,
       title={Seismic Foundation Model (SFM): a new generation deep learning model in geophysics}, 
