@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
-# File   : replicate.py
-# Author : Jiayuan Mao
-# Email  : maojiayuan@gmail.com
-# Date   : 27/01/2018
-#
+# --------------------------------------------------------
+# References:
+# Deeplab v3+: https://github.com/jfzhang95/pytorch-deeplab-xception
+# --------------------------------------------------------
+
 # This file is part of Synchronized-BatchNorm-PyTorch.
 # https://github.com/vacancy/Synchronized-BatchNorm-PyTorch
 # Distributed under MIT License.
