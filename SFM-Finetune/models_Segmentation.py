@@ -24,7 +24,6 @@ class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
         super(VisionTransformer, self).__init__(**kwargs)
 
         self.global_pool = global_pool
-        # self.decoder = DecoderCup()
         self.decoder = VIT_MLAHead(mla_channels=self.embed_dim,num_classes=self.num_classes)
         
         self.segmentation_head = SegmentationHead(
@@ -35,7 +34,7 @@ class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
         if self.global_pool:
             norm_layer = kwargs['norm_layer']
             embed_dim = kwargs['embed_dim']
-            self.fc_norm = norm_layer(embed_dim)
+            self.fc_norm = norm_layer(embed_dim) 
             del self.norm  # remove the original norm
 
     def forward_features(self, x):
@@ -56,14 +55,6 @@ class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
             featureskipnum += 1
         
         x = self.decoder(featureskip[0],featureskip[1],featureskip[2],featureskip[3],h=_H,w=_W)
-        # logits = self.segmentation_head(x)
-        # print(logits.shape)
-        # if self.global_pool:
-        #     x = x[:, 1:, :].mean(dim=1)  # global pool without cls token
-        #     outcome = self.fc_norm(x)
-        # else:
-        #     x = self.norm(x)
-        #     outcome = x[:, 0]
         return x
         
     def forward(self, x):
@@ -238,9 +229,8 @@ class MLAHead(nn.Module):
             nn.BatchNorm2d(mlahead_channels), nn.ReLU())
 
     def forward(self, mla_p2, mla_p3, mla_p4, mla_p5):
-        # head2 = self.head2(mla_p2)
         head2 = F.interpolate(self.head2(
-            mla_p2), (4*mla_p2.shape[-2],4*mla_p2.shape[-1]), mode='bilinear', align_corners=True)
+            mla_p2), (4*mla_p2.shape[-2],4*mla_p2.shape[-1]), mode='bilinear', align_corners=True) 
         head3 = F.interpolate(self.head3(
             mla_p3), (4*mla_p3.shape[-2],4*mla_p3.shape[-1]), mode='bilinear', align_corners=True)
         head4 = F.interpolate(self.head4(
@@ -281,7 +271,6 @@ class VIT_MLAHead(nn.Module):
         x4 = x4.permute(0,2,1)
         x4 = x4.contiguous().view(B,hidden,h,w)
         x = self.mlahead(x1,x2,x3,x4)
-        # x = self.mlahead(inputs[0], inputs[1], inputs[2], inputs[3])
         x = self.cls(x)
         x = F.interpolate(x, size=(h*16,w*16), mode='bilinear',
                           align_corners=True)
@@ -315,15 +304,3 @@ def vit_huge_patch14(**kwargs):
     return model
 
 
-
-if __name__ == '__main__':
-
-    model = vit_base_patch16(num_classes=6,
-                             drop_path_rate=0.1, 
-                             in_chans=1,
-                             img_size=240,img_size2=688)
-    inputs = torch.randn(2, 1, 240,688)
-
-    outputs = model(inputs)
-    print(outputs.shape)
-    print('Done')
