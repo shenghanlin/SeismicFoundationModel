@@ -90,23 +90,23 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 # Installation
 
 To prepare the environment, please follow the following instructions.
-'''
+```shell
 # create virtual environment
-conda create -n AIM python=3.7.13
-conda activate AIM
+conda create -n SFM python=3.9.12
+conda activate SFM
 
 # install pytorch
-conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
-
-# install CLIP
-pip install git+https://github.com/openai/CLIP.git
+pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 
 # install other requirements
 pip install -r requirements.txt
 
-# install mmaction2
-python setup.py develop
-'''
+# if you want to visualize the results as shown in SFM-Finetune/Application/visualization.ipynb
+pip install jupyter notebook
+python -m ipykernel install --user --name=SFM --display-name="Python (SFM)"
+
+
+```
 
 
 <br>
