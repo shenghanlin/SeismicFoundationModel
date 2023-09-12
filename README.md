@@ -37,13 +37,11 @@
 
 This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2309.02791):
 ```
-@misc{sheng2023seismic,
-      title={Seismic Foundation Model (SFM): a new generation deep learning model in geophysics}, 
-      author={Hanlin Sheng and Xinming Wu and Xu Si and Jintao Li and Sibio Zhang and Xudong Duan},
-      year={2023},
-      eprint={2309.02791},
-      archivePrefix={arXiv},
-      primaryClass={physics.geo-ph}
+@article{sheng2023seismic,
+  title={Seismic Foundation Model (SFM): a new generation deep learning model in geophysics},
+  author={Sheng, Hanlin and Wu, Xinming and Si, Xu and Li, Jintao and Zhang, Sibio and Duan, Xudong},
+  journal={arXiv preprint arXiv:2309.02791},
+  year={2023}
 }
 ```
 

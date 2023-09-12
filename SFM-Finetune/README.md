@@ -6,13 +6,11 @@
 
 This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](https://arxiv.org/abs/2309.02791):
 ```
-@misc{sheng2023seismic,
-      title={Seismic Foundation Model (SFM): a new generation deep learning model in geophysics}, 
-      author={Hanlin Sheng and Xinming Wu and Xu Si and Jintao Li and Sibio Zhang and Xudong Duan},
-      year={2023},
-      eprint={2309.02791},
-      archivePrefix={arXiv},
-      primaryClass={physics.geo-ph}
+@article{sheng2023seismic,
+  title={Seismic Foundation Model (SFM): a new generation deep learning model in geophysics},
+  author={Sheng, Hanlin and Wu, Xinming and Si, Xu and Li, Jintao and Zhang, Sibio and Duan, Xudong},
+  journal={arXiv preprint arXiv:2309.02791},
+  year={2023}
 }
 ```
 * This repo is a modification on the [MAE](https://github.com/facebookresearch/mae). Installation and preparation follow that repo.
@@ -52,7 +50,7 @@ You can use `Application\finetune_results_visualization.ipynb` to show the resul
 1. You can mimic the file `util/datasets.py` by first writing a Dataloader
 2. Add your Dataloader and corresponding Task to the file `main_finetune.py`.
 3. Add your task to the discriminant statement of the specified model.
-4. You can mimic the file `Application\*.sh` to set hyperparameters for experimentation.
+4. You can mimic the file `Application/*.sh` to set hyperparameters for experimentation.
 5. Start Training！
 
 
