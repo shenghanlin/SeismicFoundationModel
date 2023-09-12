@@ -3,7 +3,6 @@
 refer to https://github.com/jfzhang95/pytorch-deeplab-xception/blob/master/utils/metrics.py
 """
 import numpy as np
-import cv2
 
 __all__ = ['SegmentationMetric']
 
@@ -88,27 +87,4 @@ class SegmentationMetric(object):
 
     def reset(self):
         self.confusionMatrix = np.zeros((self.numClass, self.numClass))
-
-
-if __name__ == '__main__':
-    imgPredict = cv2.imread('1.png')
-    imgLabel = cv2.imread('2.png')
-    imgPredict = np.array(cv2.cvtColor(imgPredict, cv2.COLOR_BGR2GRAY) / 255., dtype=np.uint8)
-    imgLabel = np.array(cv2.cvtColor(imgLabel, cv2.COLOR_BGR2GRAY) / 255., dtype=np.uint8)
-    # imgPredict = np.array([0, 0, 1, 1, 2, 2])  # 可直接换成预测图片
-    # imgLabel = np.array([0, 0, 1, 1, 2, 2])  # 可直接换成标注图片
-
-    metric = SegmentationMetric(2)  # 2表示有2个分类，有几个分类就填几
-    hist = metric.addBatch(imgPredict, imgLabel)
-    pa = metric.pixelAccuracy()
-    cpa = metric.classPixelAccuracy()
-    mpa = metric.meanPixelAccuracy()
-    IoU = metric.IntersectionOverUnion()
-    mIoU = metric.meanIntersectionOverUnion()
-    print('hist is :\n', hist)
-    print('PA is : %f' % pa)
-    print('cPA is :', cpa)  # 列表
-    print('mPA is : %f' % mpa)
-    print('IoU is : ', IoU)
-    print('mIoU is : ', mIoU)
 
