@@ -111,10 +111,10 @@ Place the downloaded dataset and model in the corresponding folder.
 ```shell
 cd SFM-Pretrain
 mkdir output_dir
-# Download model and place it here
+# Download model and place it in folder SFM-Pretrain/output_dir
 cd output_dir 
-
 ```
+
 Download the Pretrain data zip file in ```Data``` folder.
 ```shell
 # First execute merge
