@@ -85,7 +85,29 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 | Signal Processing (Denoise)   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/EnUGPcGo-hFFhrr2T4-wvSIB4KCQQJphdONXvaO1FOr_WA?e=rP057b' target='_blank'>DatFile]    |  
 | Interpolation                 |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EWyYd0lXhfxOgffJIz5ICEUBRB_IqkbPoF1PQttUAfDLaQ?e=lR9qre' target='_blank'>DatFile]    |
 
-  
+## :neckbeard: Quick Guide
+
+# Installation
+
+To prepare the environment, please follow the following instructions.
+'''
+# create virtual environment
+conda create -n AIM python=3.7.13
+conda activate AIM
+
+# install pytorch
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+
+# install CLIP
+pip install git+https://github.com/openai/CLIP.git
+
+# install other requirements
+pip install -r requirements.txt
+
+# install mmaction2
+python setup.py develop
+'''
+
 
 <br>
 <div>
