@@ -32,7 +32,6 @@ from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
 import util.lr_decay as lrd
 import util.misc as misc
 from util.datasets import FacesSet,SaltSet,DenoiseSet,ReflectSet,InterpolationSet
-from util.datasets import FacesSetF3
 from util.pos_embed import interpolate_pos_embed
 from util.misc import NativeScalerWithGradNormCount as NativeScaler
 
@@ -277,6 +276,7 @@ def main(args):
         )
         elif args.task in ['SEAM', 'Salt']:
             model = models_Segmentation.__dict__[args.model](
+            in_chans=1,
             img_size=args.input_size,
             num_classes=args.nb_classes,
             drop_path_rate=args.drop_path,

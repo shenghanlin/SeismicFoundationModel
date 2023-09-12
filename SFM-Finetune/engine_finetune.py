@@ -21,7 +21,7 @@ from timm.utils import accuracy
 import util.misc as misc
 import util.lr_sched as lr_sched
 import util.tools as tools
-from models_mae_Denoise import forward_loss
+from models_Regression import forward_loss
 from util.msssim import MSSSIM
 from util.msssim import PSNR
 def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,

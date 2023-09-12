@@ -85,9 +85,9 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 | Signal Processing (Denoise)   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/EnUGPcGo-hFFhrr2T4-wvSIB4KCQQJphdONXvaO1FOr_WA?e=rP057b' target='_blank'>DatFile]    |  
 | Interpolation                 |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EWyYd0lXhfxOgffJIz5ICEUBRB_IqkbPoF1PQttUAfDLaQ?e=lR9qre' target='_blank'>DatFile]    |
 
-## :neckbeard: Quick Guide
+# :neckbeard: Quick Guide
 
-# Installation
+## Installation
 
 To prepare the environment, please follow the following instructions.
 ```shell
@@ -104,10 +104,31 @@ pip install -r requirements.txt
 # if you want to visualize the results as shown in SFM-Finetune/Application/visualization.ipynb
 pip install jupyter notebook
 python -m ipykernel install --user --name=SFM --display-name="Python (SFM)"
+```
+## Download Dataset & Model
 
+Place the downloaded dataset and model in the corresponding folder.
+```shell
+cd SFM-Pretrain
+mkdir output_dir
+# Download model and place it here
+cd output_dir 
 
 ```
+Download the Pretrain data zip file in ```Data``` folder.
+```shell
+# First execute merge
+zip -s 0 mae_data_more.zip --out pretrain.zip
+# Unzip the merged compressed file
+unzip pretrain.zip
+```
 
+Download the DownStream Task data zip file in ```Data``` folder.
+```shell
+cd Data
+# Download the DownStream Task data zip file in Data file
+unzip *.zip
+```
 
 <br>
 <div>
