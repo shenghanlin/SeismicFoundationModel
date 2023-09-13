@@ -130,7 +130,7 @@ unzip *.zip
 ```
 ## Facies Example
 
-1. Download the DownStream Facies Task model [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EcK3TARvKDdCmvIT1lztxtEBSJqhMZmYuT7XWIG1nnT9jg?e=ly9rJh' target='_blank'>ckpt] and place it in folder SFM-Finetune/Application/Facies/SFM-Finetune/
+1. Download the DownStream Facies Task model [facies.pth](https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EcK3TARvKDdCmvIT1lztxtEBSJqhMZmYuT7XWIG1nnT9jg?e=ly9rJh) and place it in folder ```SFM-Finetune/Application/Facies/SFM-Finetune/```
  
 2. Download the DownStream [Facies Data](https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e) and place it in folder Data/ then ```unzip *.zip```
 
