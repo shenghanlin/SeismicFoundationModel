@@ -135,13 +135,11 @@ unzip *.zip
 2. Download the DownStream [Facies Data](https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e) and place it in folder Data/ then ```unzip *.zip```
 
 3. run the following code:
-```shell
 
+```shell
 cd SFM-Finetune/Application
 #Use jupyter notebbok to open visualization.ipynb
 jupyter notebook
-#open the folder Application and then open the file visualization.ipynb
-
 ```
 
 <br>
