@@ -106,14 +106,9 @@ python -m ipykernel install --user --name=SFM --display-name="Python (SFM)"
 ## Download Dataset & Model
 
 Place the downloaded dataset and model in the corresponding folder.
-```shell
-cd SFM-Pretrain
-mkdir output_dir
-# Download model and place it in folder SFM-Pretrain/output_dir
-cd output_dir 
-```
 
-Download the Pretrain data zip file in ```Data``` folder.
+
+- If you want to obtain a foundation model pre-trained from scratch, Download the ```Pretrain data``` zip file in ```Data``` folder.
 ```shell
 # First execute merge
 zip -s 0 mae_data_more.zip --out pretrain.zip
@@ -121,18 +116,25 @@ zip -s 0 mae_data_more.zip --out pretrain.zip
 unzip pretrain.zip
 ```
 
-Download the DownStream Task data zip file in ```Data``` folder.
+- If you want to use our pre-trained model directly, Download ```Pre-trained model``` and place it in folder ```SFM-Pretrain/output_dir```
+```shell
+cd SFM-Pretrain
+mkdir output_dir
+cd output_dir 
+```
+
+-  If you want to apply the model to downstream tasks, Download the DownStream Task data zip file in ```Data``` folder.
 ```shell
 cd Data
-# Download the DownStream Task data zip file in Data file
 unzip *.zip
 ```
 ## Facies Example
 
-### Download the DownStream Facies Task model [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EcK3TARvKDdCmvIT1lztxtEBSJqhMZmYuT7XWIG1nnT9jg?e=ly9rJh' target='_blank'>ckpt] and place it in folder SFM-Finetune/Application/Facies/SFM-Finetune/
+1. Download the DownStream Facies Task model [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EcK3TARvKDdCmvIT1lztxtEBSJqhMZmYuT7XWIG1nnT9jg?e=ly9rJh' target='_blank'>ckpt] and place it in folder SFM-Finetune/Application/Facies/SFM-Finetune/
  
-#### Download the DownStream Facies Data [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e' target='_blank'>DatFile] and place it in folder Data/ then ```unzip *.zip```
+2. Download the DownStream Facies Data [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e' target='_blank'>DatFile] and place it in folder Data/ then ```unzip *.zip```
 
+3. run the following code:
 ```shell
 
 cd SFM-Finetune/Application
