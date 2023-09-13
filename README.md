@@ -127,6 +127,20 @@ cd Data
 # Download the DownStream Task data zip file in Data file
 unzip *.zip
 ```
+## Facies Example
+
+### Download the DownStream Facies Task model [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EcK3TARvKDdCmvIT1lztxtEBSJqhMZmYuT7XWIG1nnT9jg?e=ly9rJh' target='_blank'>ckpt] and place it in folder SFM-Finetune/Application/Facies/SFM-Finetune/
+ 
+#### Download the DownStream Facies Data [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e' target='_blank'>DatFile] and place it in folder Data/ then ```unzip *.zip```
+
+```shell
+
+cd SFM-Finetune/Application
+#Use jupyter notebbok to open visualization.ipynb
+jupyter notebook
+#open the folder Application and then open the file visualization.ipynb
+
+```
 
 <br>
 <div>
