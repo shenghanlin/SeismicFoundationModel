@@ -1,6 +1,6 @@
 # 🌟 Seismic Inversion
 
-  Data link [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/En2b7nDlY6BEn5tKXdcbi8oBTtO8CDRcir1IgGsnCYUeYw?e=dyTfnh' target='_blank'>DatFile]
+  Data link [<a href='https://rec.ustc.edu.cn/share/ea08a900-e839-11ee-95d8-658d8d5cc990' target='_blank'>DatFile]
 
 The folder '''Inversion''' contains 2200 224*224 training seismic data ('''seismic''') and the corresponding labels ('''label'''). Besides, the folder '''Inversion''' contains 5000 224*224 validation seismic data ('''SEAMseismic''') and the corresponding labels ('''SEAMreflect''').
 

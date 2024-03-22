@@ -65,10 +65,10 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 |    Model   |      Pretraining Size      |  Download |
 |------------|:--------------------------:|:----------:|
-| SFM-Base   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ef1xhsxytZRNjYiXJJGQAJEBZFmUiUhUuJxOyhILG88NRg?e=gGxUIb' target='_blank'>ckpt]    |  
-| SFM-Base-512   |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/ES-iLYELZq1IiOor3LgDGPsBbRIXdt2wuyXeJfK-8FhM9w?e=5eURf2' target='_blank'>ckpt]    |  
-| SFM-Large  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/Ec7ZqiAwdvtGpN5vasPnalwBXQe2qUPM_t9kdSjdkQeNIg?e=BmFlKU' target='_blank'>ckpt]    |
-| SFM-Large-512  |         512 × 512          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EXwVJmoAmRJFoenCvsIsolQBnyheFdjbejgryRj9esL2HA?e=gGsJaZ' target='_blank'>ckpt]    |    
+| SFM-Base   |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/5264ec70-e839-11ee-bbda-13c1c8639a68' target='_blank'>ckpt]    |  
+| SFM-Base-512   |         512 × 512          | [<a href='https://rec.ustc.edu.cn/share/822fce90-e839-11ee-af60-2fdbc15c6897' target='_blank'>ckpt]    |  
+| SFM-Large  |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/98681bf0-e839-11ee-9b6e-6f4613c99ceb' target='_blank'>ckpt]    |
+| SFM-Large-512  |         512 × 512          | [<a href='https://rec.ustc.edu.cn/share/a8abda40-e839-11ee-92af-afdff0d8db7d' target='_blank'>ckpt]    |    
 
 <summary> Open-source Training & DownStream Fine-tune Task Data</summary>
 <br>
@@ -76,12 +76,12 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 |    Task   |      Size      |  Download |
 |:------------------:|:--------------------------:|:----------:|
-| PreTrain   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/Et8WP_voHfNMvx_kpR_iFVwBRpH3TgHsKPicCeRhXULn0g?e=f2cT2S' target='_blank'>DatFile]    |  
-| Seismic Facies Classification   |         768 × 768          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e' target='_blank'>DatFile]    |  
-| Seismic GeoBody Identification  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/EvwMkQfKqJtOk6TP8U484yABSeCxjIL5gojWwqWSnMDeVg?e=NhbRWP' target='_blank'>DatFile]    |  
-| Inversion (Reflectivity Estimation)  |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/En2b7nDlY6BEn5tKXdcbi8oBTtO8CDRcir1IgGsnCYUeYw?e=dyTfnh' target='_blank'>DatFile]    |  
-| Signal Processing (Denoise)   |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/EnUGPcGo-hFFhrr2T4-wvSIB4KCQQJphdONXvaO1FOr_WA?e=rP057b' target='_blank'>DatFile]    |  
-| Interpolation                 |         224 × 224          | [<a href='https://mailustceducn-my.sharepoint.com/:u:/g/personal/hanlins_mail_ustc_edu_cn/EWyYd0lXhfxOgffJIz5ICEUBRB_IqkbPoF1PQttUAfDLaQ?e=lR9qre' target='_blank'>DatFile]    |
+| PreTrain   |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/07e7c9a0-e83a-11ee-9663-ada87855acba' target='_blank'>DatFile]    |  
+| Seismic Facies Classification   |         768 × 768          | [<a href='https://rec.ustc.edu.cn/share/d6cd54a0-e839-11ee-982a-9748e54ad7a4' target='_blank'>DatFile]    |  
+| Seismic GeoBody Identification  |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/c8e35880-e839-11ee-8461-f3bb734ae389' target='_blank'>DatFile]    |  
+| Inversion (Reflectivity Estimation)  |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/ea08a900-e839-11ee-95d8-658d8d5cc990' target='_blank'>DatFile]    |  
+| Signal Processing (Denoise)   |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/ba8616a0-e839-11ee-b98c-bd79efca2f3b' target='_blank'>DatFile]    |  
+| Interpolation                 |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/fe455d00-e839-11ee-8cc5-71e53e31c64f' target='_blank'>DatFile]    |
 
 # :neckbeard: Quick Guide
 

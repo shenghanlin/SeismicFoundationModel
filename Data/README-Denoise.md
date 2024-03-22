@@ -1,6 +1,6 @@
 # 🌟 Seismic Denoise
 
-  Data link [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/EnUGPcGo-hFFhrr2T4-wvSIB4KCQQJphdONXvaO1FOr_WA?e=rP057b' target='_blank'>DatFile]
+  Data link [<a href='https://rec.ustc.edu.cn/share/ba8616a0-e839-11ee-b98c-bd79efca2f3b' target='_blank'>DatFile]
 
 The folder '''Denoise'' contains 2000 224*224 seismic data ('''seismic''') and the corresponding labels ('''label'''). Besides, the folder '''Denoise''' contains 4000 224*224 validation seismic data ('''field''').
 

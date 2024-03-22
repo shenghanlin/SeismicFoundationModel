@@ -1,6 +1,6 @@
 # 🌟 Seismic Facies
 
-  Data link [<a href='https://mailustceducn-my.sharepoint.com/:f:/g/personal/hanlins_mail_ustc_edu_cn/ElUKdIW6VhZOrekvngY7TqgBKYqgVfgC6fOg_vPdK8VYDA?e=xYrA0e' target='_blank'>DatFile]
+  Data link [<a href='https://rec.ustc.edu.cn/share/d6cd54a0-e839-11ee-982a-9748e54ad7a4' target='_blank'>DatFile]
 
 The folder '''Facies''' contains 117 768*768 seismic data ('''seismic''') and the corresponding labels ('''label'''). The first 100 data are used as training set and the last 17 are used as validation dataset.
 
