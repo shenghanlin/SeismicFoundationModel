@@ -46,6 +46,7 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 ```
 
 ## 🌟 News
+* **2024.11.12:** The article has been accepted by the Geophysics journal and is awaiting publication.  
 * **2023.9.7:** Paper is released at arxiv, and code will be gradually released.  ⌛⌛⌛
 * **2023.8.7:** Github Repository Initialization (copy from Meta-Transformer). 
 
