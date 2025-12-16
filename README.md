@@ -142,6 +142,9 @@ cd SFM-Finetune/Application
 #Use jupyter notebbok to open visualization.ipynb
 jupyter notebook
 ```
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=shenghanlin/SeismicFoundationModel&type=date&legend=top-left)](https://www.star-history.com/#shenghanlin/SeismicFoundationModel&type=date&legend=top-left)
 
 <br>
 <div>
