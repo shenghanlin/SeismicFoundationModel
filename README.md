@@ -67,10 +67,10 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 | Model | Pretraining Size | Download |
 |---|:---:|:---:|
-| SFM-Base | 224 × 224 | <a href='https://rec.ustc.edu.cn/share/5264ec70-e839-11ee-bbda-13c1c8639a68' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt- Baidu Netdisk</a> |
-| SFM-Base-512 | 512 × 512 | <a href='https://rec.ustc.edu.cn/share/822fce90-e839-11ee-af60-2fdbc15c6897' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt- Baidu Netdisk</a> |
-| SFM-Large | 224 × 224 | <a href='https://rec.ustc.edu.cn/share/98681bf0-e839-11ee-9b6e-6f4613c99ceb' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt- Baidu Netdisk</a> |
-| SFM-Large-512 | 512 × 512 | <a href='https://rec.ustc.edu.cn/share/a8abda40-e839-11ee-92af-afdff0d8db7d' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt- Baidu Netdisk</a> |
+| SFM-Base | 224 × 224 | <a href='https://rec.ustc.edu.cn/share/5264ec70-e839-11ee-bbda-13c1c8639a68' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
+| SFM-Base-512 | 512 × 512 | <a href='https://rec.ustc.edu.cn/share/822fce90-e839-11ee-af60-2fdbc15c6897' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
+| SFM-Large | 224 × 224 | <a href='https://rec.ustc.edu.cn/share/98681bf0-e839-11ee-9b6e-6f4613c99ceb' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
+| SFM-Large-512 | 512 × 512 | <a href='https://rec.ustc.edu.cn/share/a8abda40-e839-11ee-92af-afdff0d8db7d' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
 
 
 <summary> Open-source Training & DownStream Fine-tune Task Data</summary>
@@ -80,11 +80,11 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 |    Task   |      Size      |  Download |
 |:------------------:|:--------------------------:|:----------:|
 | PreTrain   |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/07e7c9a0-e83a-11ee-9663-ada87855acba' target='_blank'>DatFile]    |  
-| Seismic Facies Classification   |         768 × 768          | [<a href='https://rec.ustc.edu.cn/share/d6cd54a0-e839-11ee-982a-9748e54ad7a4' target='_blank'>DatFile]    |  
-| Seismic GeoBody Identification  |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/c8e35880-e839-11ee-8461-f3bb734ae389' target='_blank'>DatFile]    |  
-| Inversion (Reflectivity Estimation)  |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/ea08a900-e839-11ee-95d8-658d8d5cc990' target='_blank'>DatFile]    |  
-| Signal Processing (Denoise)   |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/ba8616a0-e839-11ee-b98c-bd79efca2f3b' target='_blank'>DatFile]    |  
-| Interpolation                 |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/fe455d00-e839-11ee-8cc5-71e53e31c64f' target='_blank'>DatFile]    |
+| Seismic Facies Classification   |         768 × 768          | [<a href='https://rec.ustc.edu.cn/share/d6cd54a0-e839-11ee-982a-9748e54ad7a4' target='_blank'>DatFile</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a>]    |  
+| Seismic GeoBody Identification  |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/c8e35880-e839-11ee-8461-f3bb734ae389' target='_blank'>DatFile</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a>]    |  
+| Inversion (Reflectivity Estimation)  |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/ea08a900-e839-11ee-95d8-658d8d5cc990' target='_blank'>DatFile</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a>]    |  
+| Signal Processing (Denoise)   |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/ba8616a0-e839-11ee-b98c-bd79efca2f3b' target='_blank'>DatFile</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a>]    |  
+| Interpolation                 |         224 × 224          | [<a href='https://rec.ustc.edu.cn/share/fe455d00-e839-11ee-8cc5-71e53e31c64f' target='_blank'>DatFile</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a>]    |
 
 # :neckbeard: Quick Guide
 
