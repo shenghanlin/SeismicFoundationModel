@@ -67,11 +67,13 @@ This is a PyTorch/GPU implementation of the paper [Seismic Foundation Model](htt
 
 | Model | Pretraining Size | Download |
 |---|:---:|:---:|
-| SFM-Base | 224 × 224 | <a href='https://rec.ustc.edu.cn/share/5264ec70-e839-11ee-bbda-13c1c8639a68' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
-| SFM-Base-512 | 512 × 512 | <a href='https://rec.ustc.edu.cn/share/822fce90-e839-11ee-af60-2fdbc15c6897' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
-| SFM-Large | 224 × 224 | <a href='https://rec.ustc.edu.cn/share/98681bf0-e839-11ee-9b6e-6f4613c99ceb' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
-| SFM-Large-512 | 512 × 512 | <a href='https://rec.ustc.edu.cn/share/a8abda40-e839-11ee-92af-afdff0d8db7d' target='_blank'>ckpt</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
+| SFM-Base | 224 × 224 | <a href='https://drive.google.com/drive/folders/1zpLLKuWyZjxKNXNOBfYf-3OHzYJk2zRU' target='_blank'>ckpt-GoogleDrive</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
+| SFM-Base-512 | 512 × 512 | <a href='https://drive.google.com/drive/folders/1zpLLKuWyZjxKNXNOBfYf-3OHzYJk2zRU' target='_blank'>ckpt-GoogleDrive</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
+| SFM-Large | 224 × 224 | <a href='https://drive.google.com/drive/folders/1zpLLKuWyZjxKNXNOBfYf-3OHzYJk2zRU' target='_blank'>ckpt-GoogleDrive</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
+| SFM-Large-512 | 512 × 512 | <a href='https://drive.google.com/drive/folders/1zpLLKuWyZjxKNXNOBfYf-3OHzYJk2zRU' target='_blank'>ckpt-GoogleDrive</a> <a href='https://pan.baidu.com/s/1lthRpYWKczL2M9BaNlBxSw?pwd=SFMM' target='_blank'>ckpt-Baidu Netdisk</a> |
 
+
+Thanks to Zhixiang Guo for helping me upload the weights to Google Drive.
 
 <summary> Open-source Training & DownStream Fine-tune Task Data</summary>
 <br>
